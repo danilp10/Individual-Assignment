@@ -38,7 +38,7 @@ double benchmarkMatrixMult(int size) {
 int main() {
     srand(time(NULL));
 
-    int sizes[] = {10, 100, 500, 1000};
+    int sizes[] = {10, 100, 250, 500, 1000};
     for (int i = 0; i < sizeof(sizes) / sizeof(sizes[0]); i++) {
         int size = sizes[i];
         double execTime = benchmarkMatrixMult(size);
